@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Assignment-5</title>
+<!-- tailwind dasy ui -->
+ <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+</head>
+<body>
+
+    <section id="login-container" class=" mmin-h-screen max-w-md   mx-auto shadow-xl/20  ">
+    
+
+    <div class="login-card bg-white  rounded-sm shadow-gray-500 p-8 max-w-md">
+
+        <div class="header grid justify-center pb-10 ">
+            <div><img  src="./assets/github-logo.png" class="p-4 ml-10"></div>
+            <h2 class="font-bold text-center">GitHub Issues Tracker</h2>
+            <p class="text-gray-400 pb-4">Sign in to manage your issues</p>
+        </div>
+
+        <form id="loginForm" class="grid grid-cols-1">
+
+            <label class="pb-1 font-bold">Username</label>
+            <input class="rounded-sm pl-2 py-2" type="text" id="username" placeholder="Enter Username">
+            <span class="text-[#4A00FF] pt-1 text-[12px] ">Default: admin</span>
+
+            <label class="pb-1 font-bold ">Password</label>
+            <input class="rounded-sm pl-2 py-2" type="password" id="password" placeholder="Enter Password">
+            <span  class="text-[#4A00FF] text-[12px] pt-1">Default: admin123</span>
+
+            <button class="bg-[#4A00FF] text-white p-2 rounded-[5px]" type="submit">Sign In</button>
+
+        </form>
+
+        <div class="divider">OR</div>
+
+        <div class="grid justify-center ">
+            <p class="p-5">Demo Credentials:</p>
+            <p class="pl-4"><b>Username:</b> admin</p>
+            <p><b>Password:</b> admin123</p>
+        </div>
+
+    </div>
+
+
+</section>
+
+    <script src="./js-file/script.js"></script>
+</body>
+</html>
