@@ -1,5 +1,6 @@
 // console.log("bismilla")
 const container = document.getElementById("card-container");
+const tabs = document.querySelectorAll(".category-btn")
 
 function openModal(issue){
 
@@ -79,3 +80,13 @@ document.getElementById("issueModal").classList.add("hidden");
 }
 
 // -------------------------------------------------
+tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        tabs.forEach(t => t.classList.remove("active"));
+        tab.classList.add("active");
+
+        if(tab.id === "btn-all") displayCards(data);
+        else if(tab.id === "btn-open") displayCards(data.filter(issue => issue.status === "open"));
+        else if(tab.id === "btn-closed") displayCards(data.filter(issue => issue.status === "closed"));
+      });
+    });
