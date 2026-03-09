@@ -71,7 +71,7 @@
             <h2 class="mt-[15px] font-bold pb-4">${issue.title}</h2>
             <p class="text-gray-500 line-clamp-2">${issue.description}</p>
             <div class="mt-4 flex gap-2 mb-3">
-              ${issue.labels.map(label => `<span class="px-3 py-1 rounded-[10px] font-bold ${label.toLowerCase() === 'bug' ? 'bg-red-100 text-red-600' : 'bg-yellow-100 text-yellow-600'}">${label}</span>`).join('')}
+              ${issue.labels.map(label => `<span class="px-3 py-1 rounded-[10px] font-bold ${label.toUpperCase() === 'bug' ? 'bg-red-100 text-red-600' : 'bg-yellow-100 text-yellow-600'}">${label.toUpperCase()}</span>`).join('')}
             </div>
             <hr>
             <div class="text-gray-400 mt-2 mb-1">
